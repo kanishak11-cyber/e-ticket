@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="gradient-bg-footer">
+    <div className="App">
       <Navbar />
     </div>
   );

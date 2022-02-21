@@ -18,8 +18,8 @@ const Navbar = () => {
           <div className="flex flex-row items-center text-center flex-1  ">
             <div className="border-2">
               <span className="flex flex-row items-center flex-1 text-center">
-                <h1 className="text-3xl text-white text-x-bold  p-3 ">N | </h1>
-                <h3 className="text-white px-2">N F T a s k e r</h3>
+                {/* <h1 className="text-3xl text-white text-x-bold  p-3 ">E- </h1> */}
+                <h3 className="text-white px-2">E - Ticket</h3>
               </span>
             </div>
           </div>
