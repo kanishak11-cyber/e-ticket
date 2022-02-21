@@ -1,7 +1,10 @@
 .App {
-  text-align: center;
+    
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #243B55, #141E30); 
 }
-
+/* 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,8 +29,8 @@
 
 .App-link {
   color: #61dafb;
-}
-
+} */
+/* 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +38,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
