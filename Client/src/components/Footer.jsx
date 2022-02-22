@@ -28,7 +28,7 @@ const Footer = () => {
       {/* end icons */}
       <div className=" text-center md:text-sm text-xs py-5 ">
           <hr/>
-        <h1 className="mt-2">
+        <h1  className='white-glassmorphis bg-gradient-to-r from-blue-900 to-blue-400 mt-2 rounded-2xl'>
           Copyright © 2022 Easy Book. All Rights Reserved - Privacy Policy -
           Terms & Conditions
         </h1>
