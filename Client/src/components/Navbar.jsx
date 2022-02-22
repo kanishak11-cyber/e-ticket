@@ -1,77 +1,114 @@
 import React, { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-
-
-
-const NavbarItem = ({ title, classProps }) => {
-  return <li className={`mx-4 cursor-pointer${classProps}`}>{title}</li>;
-};
-
+import { FaShoppingCart } from "react-icons/fa";
+// import { Link } from "react-router-dom";
 const Navbar = () => {
- 
-  const [toggleMenu, setToggleMenu] = useState(false);
+  const [hrefggleMenu, sethrefggleMenu] = useState(false);
   return (
-    <div className="h-screen">
-      <nav className="w-full flex md:justify-center justify-between items-center p-4">
-        <div className="md:flex-[0.5] flex-initial justify-center items-center">
-          <div className="flex flex-row items-center text-center flex-1  ">
-            <div className="border-2">
-              <span className="flex flex-row items-center flex-1 text-center">
-                {/* <h1 className="text-3xl text-white text-x-bold  p-3 ">E- </h1> */}
-                <h3 className="text-white px-2">E - Ticket</h3>
-              </span>
-            </div>
+    // <header className="bg-gradient-href-r from-[#eb79b8]  href-[#eba63f]  text-white ">
+    <header className='text-white'>
+      <nav className="w-full flex  justify-between   items-center p-4">
+        <div className="md:flex-[0.5] flex-initial bg-transparent z-10 justify-between  items-center">
+          <div className="flex flex-row justify-center items-center">
+            {/* <div className="w-20 h-20 rounded-full items-center">
+              
+            </div> */}
+
+            <h1 className="text-[28px]  text-center  ">
+              <a href="/">
+              Easy Book 
+              </a>
+            </h1>
           </div>
         </div>
-        <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-          <NavbarItem title="Wallets" classProps=" " />
-
-          {/* <button className=' rounded-full px-7 font-bold white-glassmorphism'onClick={logout}>logout</button> */}
-        </ul>
+        <div className="text-white md:flex hidden  flex-row  items-center ">
+          <div className="flex flex-row justify-evenly  navbar-brand items-center">
+            <a
+              href="/home"
+              className="text-lg block justify-center scroll-smooth"
+            >
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+               Home
+              </div>
+            </a>
+            <a href="/myticket" className="text-lg justify-center">
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+                My Ticket
+              </div>{" "}
+            </a>
+            <a href="/cart" className="text-2xl justify-center">
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+                <FaShoppingCart/>
+              </div>{" "}
+            </a>
+            
+            <a
+              href="/signin"
+              className="text-lg justify-center"
+              // target={"_blank"}
+              // rel="noopener noreferrer"
+            >
+              <div className="justify-items-center px-2">Login</div>
+            </a>
+          </div>
+        </div>
         <div className="flex relative">
-          {toggleMenu ? (
+          {hrefggleMenu ? (
             <AiOutlineClose
               fontSize={28}
               className="text-white md:hidden cursor-pointer"
-              onClick={() => setToggleMenu(false)}
+              onClick={() => sethrefggleMenu(false)}
             />
           ) : (
             <HiMenuAlt4
               fontSize={28}
               className="text-white md:hidden cursor-pointer"
-              onClick={() => setToggleMenu(true)}
+              onClick={() => sethrefggleMenu(true)}
             />
           )}
-          {toggleMenu && (
+          {hrefggleMenu && (
             <ul
-              className="z-10 fixed top-0 -right-2 p-3 w-[40vw] h-screen shadow-2xl md:hidden list-none
-                        flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in"
+              className="z-10 fixed hrefp-0 -right-2 p-3 w-[50vw] h-screen shadow-xl md:hidden list-none
+                flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in"
             >
               <li className="text-xl w-full my-2">
-                <AiOutlineClose onClick={() => setToggleMenu(false)} />
+                <AiOutlineClose onClick={() => sethrefggleMenu(false)} />
               </li>
-              <li className="text-xl w-full my-2">
-                <NavbarItem title="Wallets" className='py-2 px-7 mx-4 rounded-full cursor-pointer white-glassmorphism' classProps=" " />
-              </li>
-              <li className="text-xl w-full my-2">
-                <button
-                
-                  className=" py-2 px-7 mx-4 rounded-full cursor-pointer white-glassmorphism"
-                >
-                  LOGIN
-                
-                </button>
-              </li>
-              <li className="text-xl w-full my-2"></li>
-              <li className="py-2 px-7 mx-4 rounded-full cursor-pointer">
-              {/* <button className='bg-yellow-500 rounded-lg p-5 font-bold text-black'onClick={logout}>logout</button> */}
-              </li>
+              <div className=" items-center">
+              <a
+              href="/home"
+              className="text-lg block justify-center scroll-smooth"
+            >
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+               Home
+              </div>
+            </a>
+            <a href="/myticket" className="text-lg justify-center">
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+                My Ticket
+              </div>{" "}
+            </a>
+            <a href="/cart" className="text-2xl justify-center">
+              <div className="justify-items-center hover:text-[#fdfd96] px-2">
+                <FaShoppingCart/>
+              </div>{" "}
+            </a>
+            
+            <a
+              href="/signin"
+              className="text-lg justify-center"
+              target={"_blank"}
+              rel="noopener noreferrer"
+            >
+              <div className="justify-items-center px-2">Login</div>
+            </a>
+              </div>
             </ul>
           )}
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
