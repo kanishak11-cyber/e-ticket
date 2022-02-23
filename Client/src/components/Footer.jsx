@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="justify-center mx-10">
         <hr/>
       {/* icons */}
-      <div className=" text-5xl flex flex-row flex-1 my-10 justify-evenly text-center">
+      <div className=" md:text-5xl text-3xl flex flex-row flex-1 my-2 justify-evenly text-center">
       <a href="https://facebook.com/" rel="noreferrer " target="_blank">
           <FaFacebook />
         </a>
@@ -26,9 +26,9 @@ const Footer = () => {
         </a>
       </div>
       {/* end icons */}
-      <div className=" text-center md:text-sm text-xs py-5 ">
+      <div className=" text-center md:text-sm text-xs py-3 ">
           <hr/>
-        <h1  className='white-glassmorphis bg-gradient-to-r from-blue-900 to-blue-400 mt-2 rounded-2xl'>
+        <h1  className=''>
           Copyright © 2022 Easy Book. All Rights Reserved - Privacy Policy -
           Terms & Conditions
         </h1>

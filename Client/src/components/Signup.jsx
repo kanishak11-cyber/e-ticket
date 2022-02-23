@@ -1,26 +1,27 @@
 import React from "react";
 import { FaLock, FaUserAlt } from "react-icons/fa";
-
-const Signin = () => {
+import { Link } from "react-router-dom";
+import Signin from "./Signin";
+const Signup = () => {
   return (
     <div className="h-full">
       <div>
         <div className="flex justify-center items-center">
           <div className="flex flex-col justify-center items-center">
            
-            <div className="white-glassmorphism justify-center mx-20 my-10  px-10 py-10 items-center  ">
+            <div className="line-4 border rounded-xl justify-center mx-20 my-10  px-10 py-10 items-center  ">
             <div>
               <h1 className="text-center text-3xl  font-Roboto">SIGN UP</h1>
             </div>
               <div className="flex flex-col flex-1  ">
                 <form className="form-group flex flex-col text-center items-center my-2 flex-1">
                   {/* <label className="text-right ">Email / Phone / UserName</label> */}
-                  <FaUserAlt />
+                 
                   <div className=" flex flex-row px-3  items-center border-b-2 ">
-                    
+                     <FaUserAlt />
                     <input
                       type="text"
-                      className="bg-transparent py-5 px-3"
+                      className="bg-transparent py-3 px-1"
                       placeholder="NAME"
                     />
                   </div>
@@ -29,7 +30,7 @@ const Signin = () => {
                   <div className=" flex flex-row px-3  items-center border-b-2 ">
                     <input
                       type="text"
-                      className="bg-transparent py-5 px-3"
+                      className="bg-transparent py-3 px-1"
                       placeholder="PHONE NUMBER"
                     />
                     
@@ -38,24 +39,17 @@ const Signin = () => {
                     
                     <input
                       type="email"
-                      className="bg-transparent py-5 px-3"
+                      className="bg-transparent py-3 px-1"
                       placeholder="EMAIL"
                     />
                   </div>
+                  
                   
                   <div className=" flex flex-row px-3  items-center border-b-2 ">
                     
                     <input
                       type="text"
-                      className="bg-transparent py-5 px-3"
-                      placeholder="ADDRESS"
-                    />
-                  </div>
-                  <div className=" flex flex-row px-3  items-center border-b-2 ">
-                    
-                    <input
-                      type="text"
-                      className="bg-transparent py-5 px-3"
+                      className="bg-transparent py-3 px-1"
                       placeholder="NATIONALITY"
                     />
                   </div>
@@ -67,7 +61,7 @@ const Signin = () => {
                   <div className=" flex flex-row px-3  items-center border-b-2 ">
                     <input
                       type="text"
-                      className="bg-transparent py-5 px-3"
+                      className="bg-transparent py-3 px-1"
                       placeholder="ENTER OTP"
                     />
                     
@@ -79,6 +73,7 @@ const Signin = () => {
                   </button>
                 </form>
               </div>
+              <Link to='/signin' ><h1>Already have account</h1></Link>
             </div>
           </div>
         </div>
@@ -87,4 +82,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signup;

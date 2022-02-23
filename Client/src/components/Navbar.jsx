@@ -8,7 +8,7 @@ const Navbar = () => {
   const [toggleMenu, seToggleMenu] = useState(false);
   return (
     //  <header className="bg-gradient-to-r from-[#eb79b8]  to-[#eba63f]  text-white ">
-     <header className='text-white'> 
+     <header className='text-white line-3'> 
       <nav className="w-full flex  justify-between   items-center p-4">
         <div className="md:flex-[0.5] flex-initial bg-transparent z-10 justify-between  items-center">
           <div className="flex flex-row justify-center items-center ">
