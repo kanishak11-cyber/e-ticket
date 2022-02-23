@@ -7,11 +7,13 @@ import Cart from './components/Cart';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Signin from './components/Signin';
 import Footer from './components/Footer';
+import Signup from './components/Signup';
 function App() {
   return (
     <div className="App text-white ont">
-      <Router>
-        <Navbar />
+      <Navbar />
+      {/* <Router>
+        
         <Routes >
           <Route path="/" element={<Home />}></Route>
           <Route path='/myticket' element={<MyTicket />}></Route>
@@ -19,7 +21,8 @@ function App() {
           <Route path='/signin' element={<Signin/>}/>
         </Routes>
         <Footer/>
-      </Router>
+      </Router> */}
+      <Signup></Signup>
     </div>
 
 

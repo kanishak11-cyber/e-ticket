@@ -1,11 +1,11 @@
 .state_name{
     text-align: justify;
     padding: 4.0rem;
-    text-color:rgb(255, 255, 255)
+    
 
 }
 .state_image{
-    background-image: url(D:\SIH\Client\public\uttar-pradesh.jpg);
+    background-image: url('G:\VS CODE\e-ticket\Client\public\uttar-pradesh.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
