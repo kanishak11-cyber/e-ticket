@@ -1,19 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import up from "../asset/up.jpg";
 const Home = () => {
-  // const [stateData, setStateData] = useState([]);
-
-  // const getStates = async () => {
-  //   const response = await fetch("https://indstatesapi.anandpy2156.repl.co/api");
-
-  //   console.log(response);
-  //   setStateData(await response.json());
-  //   console.log(data);
-  // };
-  // useEffect(() => {
-  //   getStates();
-  // }, []);
+//  useEffect(() => {
+//    ;(async() => {
+//       const response = await fetch("/db/Heritage");
+//       const data = await response.json();
+//       console.log(data);
+//     } 
+//     )
+ 
+//  }, [])
+ 
 
   return (
     <div>
