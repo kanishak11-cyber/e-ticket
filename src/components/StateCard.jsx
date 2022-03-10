@@ -1,30 +1,25 @@
-import React, { Component } from 'react'
-import './Card.css';
-import he from '../components/he.jpg';
+import React from 'react'
+import './Styles/Card.css'
+function StateCard() {
+  return (
+    <div>
+              <div className="box">
 
-export class StateCard extends Component {
-  render() {
-   
-    return (
-      <div>
-         <div className="box">
+        <div className="front ">
 
-            <div className="front ">
+            <img src={he} alt='hello' height='250' width='300' />
 
-                <img src={he} alt='hello' height='250' width='300' />
+        </div>
 
-            </div>
+        <div className="back">
 
-            <div className="back">
+            <h1>stateName</h1>
 
-                <h1>stateName</h1>
+        </div>
 
-            </div>
-
-            </div>
-      </div>
-    )
-  }
+        </div>
+    </div>
+  )
 }
 
 export default StateCard
