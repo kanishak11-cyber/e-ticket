@@ -27,7 +27,7 @@ export default createSchema({
           type:'string',
         },
         {
-          name:'placeimage',
+          name:'placeImage',
           title:'Place Image',
           type:'image',
         },
