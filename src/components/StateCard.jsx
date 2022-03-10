@@ -1,5 +1,6 @@
 import React from 'react'
 import './Styles/Card.css'
+import image from '../asset/he.jpg'
 function StateCard() {
   return (
     <div>
@@ -7,7 +8,7 @@ function StateCard() {
 
         <div className="front ">
 
-            <img src={he} alt='hello' height='250' width='300' />
+            <img src={image} alt='hello' height='250' width='300' />
 
         </div>
 
